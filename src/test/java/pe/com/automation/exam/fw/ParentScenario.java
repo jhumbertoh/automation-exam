@@ -22,7 +22,7 @@ public class ParentScenario {
 	        driver.manage().window().maximize();
 			
 		} catch (Exception e) {
-			System.out.println("Excepcion al momento de generar el Driver " + e);
+			System.out.println("Exception when registering the Driver " + e);
 		}
 		
 		landingPage = new LandingPage(driver);
