@@ -66,10 +66,10 @@ public class EbayStoreSteps extends ParentScenario {
 		closeDriver();
 	}
 	
-	@Then("^I should print the first 5 products with their prices in console$")
-	public void I_should_print_the_first_5_products_with_their_prices_in_console(){
-		System.out.println("The first 5 products are:");
-		for (int i = 1; i <= 5; i++) {
+	@Then("^I should print the first \"([^\"]*)\" products with their prices in console$")
+	public void I_should_print_the_first_products_with_their_prices_in_console(String numero){
+		System.out.println("The first "+numero+" products are:");
+		for (int i = 1; i <= Integer.parseInt(numero); i++) {
 			System.out.println(landingPage.getNameProduct(""+i)+": "+landingPage.getPriceProduct(""+i));
 		}
 		closeDriver();
