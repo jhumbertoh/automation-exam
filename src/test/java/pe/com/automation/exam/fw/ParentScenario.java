@@ -17,9 +17,9 @@ public class ParentScenario {
 	public void startChrome() {
 
 		try {
-			//driver = new ChromeDriver();
-			System.setProperty("webdriver.gecko.driver", "src/test/resources/driver/geckodriver");
-			driver = new FirefoxDriver();
+			driver = new ChromeDriver();
+			//System.setProperty("webdriver.gecko.driver", "src/test/resources/driver/geckodriver");
+			//driver = new FirefoxDriver();
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			driver.manage().window().setPosition(new Point(0, 0));
 			driver.manage().window().maximize();
