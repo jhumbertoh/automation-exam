@@ -12,7 +12,7 @@ Scenario: The number of results for brand PUMA
 	And I select the size 10 
 	Then I should see the number of results 
 	
-	
+
 Scenario: Assert the order taking the first 5 results 
 	Given I go to the Ebay page on URL "https://www.ebay.com" 
 	When I fill the value "shoes" in the text field 

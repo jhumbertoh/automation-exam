@@ -17,9 +17,9 @@ public class ParentScenario {
 
 		try {
 			driver = new ChromeDriver();
-			//driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-	        //driver.manage().window().setPosition(new Point(0, 0));	
-	        //driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+	        driver.manage().window().setPosition(new Point(0, 0));	
+	        driver.manage().window().maximize();
 			
 		} catch (Exception e) {
 			System.out.println("Exception when registering the Driver " + e);
